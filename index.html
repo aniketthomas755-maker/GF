@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="A premium, cinematic Girlfriend's Day experience for Wania" />
+    <title>Happy Girlfriend's Day, Wania</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="aurora aurora-one"></div>
+    <div class="aurora aurora-two"></div>
+    <div class="stars-layer" aria-hidden="true"></div>
+    <div class="particle-layer" aria-hidden="true"></div>
+
+    <main class="page-shell">
+      <section class="scene scene-active" id="scene1" aria-labelledby="typing">
+        <div class="scene-content intro-scene">
+          <p class="eyebrow">For the woman who makes every night glow</p>
+          <h1 id="typing" aria-live="polite"></h1>
+          <button class="btn btn-primary" id="startBtn" type="button">Begin Our Journey ❤️</button>
+        </div>
+      </section>
+
+      <section class="scene" id="scene2" aria-label="Gift reveal">
+        <div class="scene-card gift-scene">
+          <div class="glass-panel">
+            <p class="eyebrow">A little surprise for your heart</p>
+            <h2>Open the gift, love</h2>
+            <div class="gift-box" id="giftBox" role="button" tabindex="0" aria-label="Open the gift">
+              <div class="gift-lid"></div>
+              <div class="gift-ribbon"></div>
+              <div class="gift-base"></div>
+            </div>
+            <p class="scene-caption">Tap the gift ❤️</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="scene" id="scene3" aria-label="Opening animation">
+        <div class="scene-card opening-scene">
+          <div class="opening-stage">
+            <div class="sparkle sparkle-a"></div>
+            <div class="sparkle sparkle-b"></div>
+            <div class="sparkle sparkle-c"></div>
+            <div class="heart-burst"></div>
+            <div class="envelope-rising"></div>
+          </div>
+          <p class="scene-caption">The music begins, and the world softens around us.</p>
+        </div>
+      </section>
+
+      <section class="scene" id="scene4" aria-label="Love letter">
+        <div class="scene-card letter-scene">
+          <div class="glass-panel letter-panel">
+            <p class="eyebrow">Handwritten for Wania</p>
+            <div class="letter-paper" id="letterPaper">
+              <div class="paper-veil"></div>
+              <p class="handwriting" id="letterText"></p>
+            </div>
+            <button class="btn btn-secondary" data-next="scene5" type="button">Open the memories</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="scene" id="scene5" aria-label="Memory gallery">
+        <div class="scene-card gallery-scene">
+          <div class="glass-panel">
+            <p class="eyebrow">Our beautiful chapters</p>
+            <h2>Memory Gallery</h2>
+            <div class="gallery-grid" id="galleryGrid">
+              <button class="gallery-item" type="button" data-index="0">
+                <img src="images/photo1.jpg" alt="A soft memory of us" loading="lazy" />
+                <span>First laugh</span>
+              </button>
+              <button class="gallery-item" type="button" data-index="1">
+                <img src="images/photo2.jpg" alt="A glowing evening memory" loading="lazy" />
+                <span>Golden evening</span>
+              </button>
+              <button class="gallery-item" type="button" data-index="2">
+                <img src="images/photo3.jpg" alt="A warm moment shared together" loading="lazy" />
+                <span>Warm embrace</span>
+              </button>
+              <button class="gallery-item" type="button" data-index="3">
+                <img src="images/photo4.jpg" alt="A dreamy memory under the stars" loading="lazy" />
+                <span>Under the stars</span>
+              </button>
+              <button class="gallery-item" type="button" data-index="4">
+                <img src="images/photo5.jpg" alt="A romantic memory in moonlight" loading="lazy" />
+                <span>Moonlit glow</span>
+              </button>
+              <button class="gallery-item" type="button" data-index="5">
+                <img src="images/photo6.jpg" alt="A happy memory filled with love" loading="lazy" />
+                <span>Forever smile</span>
+              </button>
+            </div>
+            <button class="btn btn-secondary" data-next="scene6" type="button">Turn the pages</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="scene" id="scene6" aria-label="Story book">
+        <div class="scene-card book-scene">
+          <div class="glass-panel">
+            <p class="eyebrow">A story made of us</p>
+            <h2>Our Love Story</h2>
+            <div class="book" id="book">
+              <div class="book-page page-front" id="bookFront"></div>
+              <div class="book-page page-back" id="bookBack"></div>
+            </div>
+            <div class="book-controls">
+              <button class="btn btn-ghost" id="prevPage" type="button">← Prev</button>
+              <button class="btn btn-ghost" id="nextPage" type="button">Next →</button>
+            </div>
+            <button class="btn btn-secondary" data-next="scene7" type="button">Keep going</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="scene" id="scene7" aria-label="Reasons I love you">
+        <div class="scene-card reasons-scene">
+          <div class="glass-panel">
+            <p class="eyebrow">Why you are everything to me</p>
+            <h2>20 Reasons I Love You</h2>
+            <div class="reasons-grid">
+              <article class="reason-card"><span class="reason-icon">💫</span><h3>Your smile</h3><p>It turns ordinary days into little miracles.</p></article>
+              <article class="reason-card"><span class="reason-icon">🌙</span><h3>Your calm</h3><p>Your gentleness makes my heart feel safe.</p></article>
+              <article class="reason-card"><span class="reason-icon">🌸</span><h3>Your kindness</h3><p>You make love feel effortless and beautiful.</p></article>
+              <article class="reason-card"><span class="reason-icon">✨</span><h3>Your glow</h3><p>Your presence lights up every room.</p></article>
+              <article class="reason-card"><span class="reason-icon">🎧</span><h3>Our rhythm</h3><p>Even silence feels full with you beside me.</p></article>
+              <article class="reason-card"><span class="reason-icon">☁️</span><h3>Your warmth</h3><p>You bring comfort like a soft sunrise.</p></article>
+              <article class="reason-card"><span class="reason-icon">🔮</span><h3>Your mind</h3><p>Your thoughts are a garden I never want to leave.</p></article>
+              <article class="reason-card"><span class="reason-icon">🫶</span><h3>Your heart</h3><p>You give love with rare sincerity.</p></article>
+              <article class="reason-card"><span class="reason-icon">💖</span><h3>Your tenderness</h3><p>Your love feels like a gentle promise.</p></article>
+              <article class="reason-card"><span class="reason-icon">🌻</span><h3>Your joy</h3><p>You turn my worries into something lighter.</p></article>
+              <article class="reason-card"><span class="reason-icon">🌌</span><h3>Your dreams</h3><p>I adore the way you imagine beautiful futures.</p></article>
+              <article class="reason-card"><span class="reason-icon">🕊️</span><h3>Your softness</h3><p>You make everything feel tender and real.</p></article>
+              <article class="reason-card"><span class="reason-icon">🪄</span><h3>Your magic</h3><p>You make love feel surreal in the best way.</p></article>
+              <article class="reason-card"><span class="reason-icon">🌊</span><h3>Your energy</h3><p>You bring a calm kind of poetry to life.</p></article>
+              <article class="reason-card"><span class="reason-icon">💎</span><h3>Your value</h3><p>You are priceless beyond all words.</p></article>
+              <article class="reason-card"><span class="reason-icon">🧡</span><h3>Your loyalty</h3><p>My heart trusts you completely.</p></article>
+              <article class="reason-card"><span class="reason-icon">🌺</span><h3>Your grace</h3><p>You carry beauty in every small moment.</p></article>
+              <article class="reason-card"><span class="reason-icon">💌</span><h3>Your words</h3><p>Your voice feels like comfort and devotion.</p></article>
+              <article class="reason-card"><span class="reason-icon">🪐</span><h3>Your universe</h3><p>Being loved by you feels like being chosen by the stars.</p></article>
+              <article class="reason-card"><span class="reason-icon">💞</span><h3>Your forever</h3><p>You are the love I would choose again and again.</p></article>
+            </div>
+            <button class="btn btn-secondary" data-next="scene8" type="button">See our time together</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="scene" id="scene8" aria-label="Relationship counter">
+        <div class="scene-card counter-scene">
+          <div class="glass-panel">
+            <p class="eyebrow">Counting every beautiful moment</p>
+            <h2>Our Love Timeline</h2>
+            <div class="counter-grid">
+              <div class="counter-card"><span id="years">00</span><small>Years</small></div>
+              <div class="counter-card"><span id="months">00</span><small>Months</small></div>
+              <div class="counter-card"><span id="days">00</span><small>Days</small></div>
+              <div class="counter-card"><span id="hours">00</span><small>Hours</small></div>
+              <div class="counter-card"><span id="minutes">00</span><small>Minutes</small></div>
+              <div class="counter-card"><span id="seconds">00</span><small>Seconds</small></div>
+            </div>
+            <button class="btn btn-secondary" data-next="scene9" type="button">Hear our song</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="scene" id="scene9" aria-label="Music player">
+        <div class="scene-card music-scene">
+          <div class="glass-panel">
+            <p class="eyebrow">A soft soundtrack for us</p>
+            <h2>Love Melody</h2>
+            <div class="music-shell">
+              <div class="music-card">
+                <div class="music-icon">🎵</div>
+                <div class="music-info">
+                  <h3>For Wania</h3>
+                  <p>Our tender melody in motion</p>
+                </div>
+                <div class="music-controls">
+                  <button class="btn btn-ghost" id="playToggle" type="button">Pause</button>
+                </div>
+                <input class="seekbar" id="seekBar" type="range" min="0" max="100" value="0" />
+                <div class="time-row"><span id="currentTime">0:00</span><span id="duration">0:00</span></div>
+                <input class="volume" id="volumeBar" type="range" min="0" max="100" value="70" />
+              </div>
+            </div>
+            <button class="btn btn-secondary" data-next="scene10" type="button">Cross the distance</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="scene" id="scene10" aria-label="Long distance">
+        <div class="scene-card distance-scene">
+          <div class="glass-panel">
+            <p class="eyebrow">Even miles cannot break our bond</p>
+            <h2>Love Across the Distance</h2>
+            <div class="distance-card">
+              <div class="earth"></div>
+              <div class="orbit-path"></div>
+              <div class="heart-trail"></div>
+            </div>
+            <button class="btn btn-secondary" data-next="scene11" type="button">Answer the quiz</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="scene" id="scene11" aria-label="Love quiz">
+        <div class="scene-card quiz-scene">
+          <div class="glass-panel">
+            <p class="eyebrow">A little playful test</p>
+            <h2>Mini Love Quiz</h2>
+            <div class="quiz-card">
+              <div class="quiz-progress"><span id="progressBar"></span></div>
+              <div class="quiz-question" id="quizQuestion"></div>
+              <div class="quiz-options" id="quizOptions"></div>
+            </div>
+            <button class="btn btn-secondary" data-next="scene12" id="quizSkip" type="button">Skip to the end</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="scene" id="scene12" aria-label="Final proposal">
+        <div class="scene-card final-scene">
+          <div class="glass-panel final-panel">
+            <p class="eyebrow">The final promise</p>
+            <h2>Will you always be my girl?</h2>
+            <div class="heart-giant"></div>
+            <div class="final-actions">
+              <button class="btn btn-primary" id="yesBtn" type="button">YES ❤️</button>
+              <button class="btn btn-secondary" id="alwaysBtn" type="button">ALWAYS ❤️</button>
+            </div>
+            <div class="celebration-layer" id="celebrationLayer"></div>
+            <h3 class="final-message" id="finalMessage">I Love You Forever Wania ❤️</h3>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <button class="floating-player-toggle" id="floatingPlayerToggle" type="button" aria-label="Toggle music player">🎶</button>
+
+    <div class="gallery-modal" id="galleryModal" hidden>
+      <button class="modal-close" id="modalClose" type="button" aria-label="Close preview">×</button>
+      <button class="modal-nav prev" id="modalPrev" type="button" aria-label="Previous image">❮</button>
+      <img id="modalImage" alt="" />
+      <button class="modal-nav next" id="modalNext" type="button" aria-label="Next image">❯</button>
+    </div>
+
+    <audio id="bgAudio" preload="none" src="assets/song.wav"></audio>
+
+    <script src="script.js"></script>
+  </body>
+</html>
